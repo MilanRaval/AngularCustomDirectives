@@ -1,0 +1,6 @@
+<form [formGroup]="exampleForm" class="form-horizontal">
+  Currency Input box ($)
+  <input type="text" class="form-control"
+        formControlName="salaryControl"
+        currencyFormat [currencyControl]="exampleForm.controls.salaryControl" />
+</form>
